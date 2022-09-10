@@ -1,0 +1,19 @@
+{
+  "name": "json-grabber",
+  "version": "1.0.0",
+  "description": "a tool to grab json files for a collection",
+  "main": "index.js",
+  "scripts": {
+    "grab": "node index.js"
+  },
+  "keywords": [
+    "nft",
+    "json",
+    "metadata"
+  ],
+  "author": "Fazel Pejmanfar",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
