@@ -14,7 +14,7 @@ const getimg = () => {
         console.log('Creating Path to Store Images...');
       }
       });
-    console.log(`%cFetching ${endIndex} image from ${CID}`, `color: red`);
+    console.log(`%cFetching ${endIndex - startIndex + 1} image from ${CID}`, `color: red`);
     //fs.rmSync(imgPath, { recursive: true, force: true });
     //fs.mkdirSync(`${dir}/images`, { recursive: true});
     for(let i = startIndex; i <= endIndex; i++) {
