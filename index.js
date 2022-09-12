@@ -15,8 +15,8 @@ const getimg = () => {
       }
       });
     console.log(`%cFetching ${endIndex} image from ${CID}`, `color: red`);
-    fs.rmSync(imgPath, { recursive: true, force: true });
-    fs.mkdirSync(`${dir}/images`, { recursive: true});
+    //fs.rmSync(imgPath, { recursive: true, force: true });
+    //fs.mkdirSync(`${dir}/images`, { recursive: true});
     for(let i = startIndex; i <= endIndex; i++) {
     axios.get(`https://sweetsea.mypinata.cloud/ipfs/${CID}/${i}.png`, {
       responseType: 'arraybuffer'
@@ -32,4 +32,8 @@ const getimg = () => {
 
 
 
-getimg();
+if (endIndex === "10000") {
+  console.log("You cant pass 10000 as endindex, MAX 9999")
+} else {
+  getimg();
+}
