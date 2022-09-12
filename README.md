@@ -4,8 +4,9 @@
 
 ## Getting Started 
 
-a tool to grab nft metadata by passing ipfs cid of images
-
+a tool to grab nft metadata by passing ipfs cid of images\
+Max img to Download is 1000 per command\
+see the example below
 
 ### Installing
 
