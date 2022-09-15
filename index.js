@@ -1,11 +1,12 @@
 const fs = require("fs");
+require('dotenv').config();
 const axios = require('axios').default;
 const args = process.argv.slice(2);
 const dir = `${__dirname}`;
 const imgPath = `${dir}/images`;
 const startIndex = args[0];
 const endIndex = args[1];
-const CID = args[2];
+const CID = process.env.CID;
 
 const getimg = () => {
     fs.readdir(imgPath, (err) => {
